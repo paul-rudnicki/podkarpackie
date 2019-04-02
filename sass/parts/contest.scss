@@ -1,0 +1,114 @@
+.contest{
+	margin-top: 100px;
+	h2{
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 2.7rem;
+		font-size: 2.7rem;
+		@media(min-width: 600px){
+			font-size: 3.9rem;
+			line-height: 50px;
+		}
+	}
+	&__wrapper{
+		img{
+			position: absolute;
+			height: 360px;
+		}
+	}
+	&__background{
+		@include image_bg;
+		height: 360px;
+		margin-left: -30px;
+    margin-top: 30px;
+    @media(max-width: 600px){
+    	display: none; 
+    }
+	}
+	&__image{
+		background-image: url('../images/contest_img.png');
+		background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    position: absolute;
+    top: 0px;
+    left: 13px;
+    width: 100%;
+    @media(max-width: 600px){
+    	position: relative;
+    	left: 0;
+    	height: 300px; 
+    }
+    p{
+    	position: absolute;
+    	bottom: 6%;
+    	left: 12%;
+    	font-size: 3rem;
+    	width: 50%;
+    	color: #fff;
+    	text-transform: uppercase;
+    	@media(max-width: 600px){
+    		font-size: 2rem;
+    		bottom: 15%;
+    	}
+    }
+	}
+	&__image-top:before{
+		content: url('../images/arrow-left-top.png');
+		position: absolute;
+		top: 4%;
+		left: 4%;
+	}
+	&__image-top:after{
+		content: url('../images/arrow-right-top.png');
+		position: absolute;
+		top: 4%;
+		right: 4%;
+	}
+	&__image-bottom:before{
+		content: url('../images/arrow-left-bottom.png');
+		position: absolute;
+		bottom: 4%;
+		left: 4%;
+	}
+	&__image-bottom:after{
+		content: url('../images/arrow-right-bottom.png');
+		position: absolute;
+		bottom: 4%;
+		right: 4%;
+	}
+	&__headings{
+		h2{
+			line-height: 30px;
+		}
+		h3{
+			font-size: 2.2rem;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: 700;
+		}
+	}
+	&__paragraph{
+		@media (max-width: 576px){
+			p{
+				text-align: center;
+			}
+		}
+		p{
+			font-weight: 700;
+			font-size: 2.5rem;
+			line-height: 32px;
+		}
+	}
+	@media (max-width: 576px){
+		&__button{
+			text-align: center;
+		}		
+	}
+	&__button{
+		button{
+			@include button_gradient;
+			@include button;
+		}
+	}
+}

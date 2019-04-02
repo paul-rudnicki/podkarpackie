@@ -1,0 +1,60 @@
+.jury{
+	margin-top: 100px;
+	@media (max-width: 575px){
+		text-align: center;
+	}
+	h2{
+		font-size: 4.2rem;
+		color: $blue;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	&__chairman{
+		color: $blue;
+		text-align: center;
+		font-size: 3rem;
+		margin-bottom: 2em;
+		font-weight: bold;
+	}
+	&__chairman-name{
+		color: $blue;
+		font-weight: bold;
+		font-size: 3rem;
+		margin-top: 25%;
+		line-height: 3rem;
+		margin-bottom: .5em;
+		@media (max-width: 991px){
+			margin-top: 1em;
+		}
+	}
+	p{
+		font-weight: bold;
+		font-size: 2.1rem;
+		line-height: 2.5rem;
+	}
+	&__members_title{
+		margin-top: 2em;
+		margin-bottom: 1em;
+		color: $blue;
+		font-size: 3rem;
+		text-align: center;
+		font-weight: bold;
+	}
+	&__members_name{
+		color: $blue;
+		font-weight: bold;
+		font-size: 2.1rem;
+		margin-top: 1em;
+	}
+	&__members{
+		@media (max-width: 767px){
+			text-align: center;
+		}
+	}
+	&__members_item{
+		@media (max-width: 767px){
+			margin-bottom: 2em;
+		}
+	}
+}

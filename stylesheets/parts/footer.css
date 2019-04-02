@@ -1,0 +1,50 @@
+/* line 2, ../../sass/parts/footer.scss */
+.footer__bottom {
+  -webkit-box-shadow: 0px -9px 30px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px -9px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px -9px 30px 0px rgba(0, 0, 0, 0.2);
+  background-color: #e5e5e5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 10, ../../sass/parts/footer.scss */
+.footer p {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  color: #000;
+  margin-bottom: 0;
+}
+/* line 16, ../../sass/parts/footer.scss */
+.footer ul {
+  display: flex;
+  line-height: 65px;
+  justify-content: center;
+  margin-bottom: 0;
+  margin-top: 20px;
+  line-height: 1.5rem;
+}
+@media (min-width: 767px) {
+  /* line 16, ../../sass/parts/footer.scss */
+  .footer ul {
+    justify-content: flex-end;
+    margin-top: 0;
+    line-height: 55px;
+  }
+}
+/* line 28, ../../sass/parts/footer.scss */
+.footer ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+/* line 31, ../../sass/parts/footer.scss */
+.footer ul li a {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+@media (min-width: 767px) {
+  /* line 31, ../../sass/parts/footer.scss */
+  .footer ul li a {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,79 @@
+.button_play{
+	margin-top: 10em;
+	text-align: center;
+	margin-bottom: 10em;
+	h2{
+		color: $blue;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 3.4rem;
+		@media (max-width: 767px){
+			font-size: 2.2rem;
+		}
+	}
+	&__button{
+		margin-top: 3em;
+		position: relative;
+		@media (max-width: 767px){
+			margin-top: 5em;
+		}
+		button{
+			background-color: #47ab64;
+			padding: 20px 35px;
+			font-size: 3.9rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #fff;
+			@media (max-width: 767px){
+				font-size: 1.2rem;
+				padding: 15px 10px;
+			}
+		}
+	}
+	&__arrow_top{
+		&:before{
+			content: url('../images/arrow-top-left-small.png');
+			position: absolute;
+			top: -30%;
+	    left: -10%;
+			@media (min-width: 767px){
+				content: url('../images/arrow-left-top.png');
+				top: -35%;
+				left: -10%;
+			}
+		}
+		&:after{
+			content: url('../images/arrow-top-right-small.png');
+			position: absolute;
+			top: -30%;
+	    right: -10%;
+			@media (min-width: 767px){
+				content: url('../images/arrow-right-top.png');
+				top: -35%;
+				right: -10%;
+			}
+		}
+	}
+	&__arrow_bottom{
+		&:before{
+			content: url('../images/arrow-bottom-left-small.png');
+			position: absolute;
+			bottom: -35%;
+	    left: -10%;
+			@media (min-width: 767px){
+				content: url('../images/arrow-left-bottom.png');
+				left: -10%;
+			}
+		}
+		&:after{
+			content: url('../images/arrow-bottom-right-small.png');
+			position: absolute;
+			bottom: -30%;
+	    right: -10%;
+			@media (min-width: 767px){
+				content: url('../images/arrow-right-bottom.png');
+				right: -10%;
+			}
+		}
+	}
+}
